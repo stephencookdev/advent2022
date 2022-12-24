@@ -1,0 +1,10 @@
+(executable
+ (public_name aoc)
+ (name main)
+ (libraries aoc str batteries))
+
+(env
+ (dev
+  (flags
+   ; ignore unused fields
+   (:standard -w -69 -w -32))))
